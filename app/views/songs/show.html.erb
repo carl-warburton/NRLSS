@@ -1,0 +1,10 @@
+<h1>Showing Selected Song</h1>
+<p>
+  Title: <%= @song.title %>
+</p>
+<p>
+  Club: <%= @song.club %>
+</p>
+
+<%= link_to 'Back', song_path %>
+<%= link_to "Edit", edit_song_path(@song) %>

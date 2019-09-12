@@ -1,0 +1,16 @@
+<h1>Listing all articles</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= song.club %></td>
+      <td><%= link_to 'edit', edit_song_path(song) %></td>
+      <td><%= link_to 'Show', song_path(song) %></td>
+    </tr>
+<% end %>
+</table>
+
